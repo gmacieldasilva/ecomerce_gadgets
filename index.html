@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NEXORA — Gadgets do futuro</title>
+  <meta name="description" content="Catálogo interativo de gadgets futuristas: wearables, casa inteligente e áudio avançado.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/produtos.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="index.html" aria-label="NEXORA, página inicial">NEXORA</a>
+    <nav class="menu" aria-label="Menu principal">
+      <a href="index.html" aria-current="page">Catálogo</a>
+      <a href="carrinho.html" class="link-carrinho">Carrinho <span id="contador-carrinho" class="contador" aria-live="polite">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-texto">
+        <h1>Tecnologia que flutua à sua frente.</h1>
+        <p>Óculos com tradução ao vivo, anéis que leem gestos e caixas de som que levitam. Escolha o seu próximo gadget.</p>
+      </div>
+      <div class="orbe" aria-hidden="true"></div>
+    </section>
+
+    <section class="catalogo" aria-labelledby="titulo-catalogo">
+      <h2 id="titulo-catalogo">Catálogo</h2>
+      <div class="controles">
+        <label class="busca">
+          <span class="sr-only">Buscar produto pelo nome</span>
+          <input type="search" id="busca" placeholder="Buscar pelo nome do produto" autocomplete="off">
+        </label>
+        <div class="filtros" id="filtros" role="group" aria-label="Filtrar por categoria"></div>
+      </div>
+      <p id="resultado" class="resultado" aria-live="polite"></p>
+      <div id="lista-produtos" class="grade"></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Projeto acadêmico — Desenvolvimento Web, 4º bimestre. Prof. Danilo Bezerra.</p>
+    <p>Amanda Santos Rosado, Beatriz Catarina Costa Santiago e Gabriel Maciel da Silva.</p>
+  </footer>
+
+  <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

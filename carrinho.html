@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrinho — NEXORA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/produtos.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="index.html" aria-label="NEXORA, página inicial">NEXORA</a>
+    <nav class="menu" aria-label="Menu principal">
+      <a href="index.html">Catálogo</a>
+      <a href="carrinho.html" class="link-carrinho" aria-current="page">Carrinho <span id="contador-carrinho" class="contador" aria-live="polite">0</span></a>
+    </nav>
+  </header>
+
+  <main class="pagina-carrinho">
+    <h1>Seu carrinho</h1>
+    <div id="itens-carrinho" class="itens"></div>
+    <section id="resumo" class="resumo" aria-label="Resumo do pedido" hidden>
+      <p class="total">Total <strong id="total-carrinho">R$ 0,00</strong></p>
+      <div class="acoes">
+        <button type="button" id="limpar" class="botao secundario">Esvaziar carrinho</button>
+        <button type="button" id="finalizar" class="botao">Confirmar pedido</button>
+      </div>
+    </section>
+    <p id="confirmacao" class="confirmacao" role="status" hidden></p>
+  </main>
+
+  <footer class="rodape">
+    <p>Projeto acadêmico — Desenvolvimento Web, 4º bimestre. Prof. Danilo Bezerra.</p>
+    <p>Amanda Santos Rosado, Beatriz Catarina Costa Santiago e Gabriel Maciel da Silva.</p>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
